@@ -329,4 +329,4 @@ ASALocalRun/
 .mfractor/
 
 # User-defined
-/WebAPISample/Migrations*
+/WebAPISample/Migrations/*
