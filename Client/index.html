@@ -8,7 +8,7 @@
 <body class="bg-dark">
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="jumbotron col-8">
+        <div class="jumbotron col-8" >
             <h2>Movie Library</h2>
             <span>Search the movie library</span>
         </div>
@@ -19,16 +19,15 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Search for a movie">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="button">Search</button>
+                    <button class="btn btn-primary" type="button">Search</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="row justify-content-center">
         <!--Container for results of search-->
-        <div id="response" class="text-white">
-            <pre></pre>
-            <p>Test</p>
+        <div id="response">
+            <pre class="text-white"></pre>
         </div>
     </div>
     <div class="row justify-content-center">
@@ -40,15 +39,18 @@
         <p>-</p>
     </div>
     <div class="row justify-content-center">
-        <form id="my-form" style="">
-            <input type="text" name="title" placeholder="Title" />
-            <input type="text" name="director" placeholder="Director" />
-            <input type="text" name="genre" placeholder="Genre"/>
-        
-            <button type="submit">Submit</button>
+        <form id="my-form">
+            <div class="input-group mb-3">
+
+                    <input type="text" name="title" placeholder="Title" />
+                    <input type="text" name="director" placeholder="Director" />
+                    <input type="text" name="genre" placeholder="Genre"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+            </div>            
         </form>
     </div>
-
 </div>
 
 

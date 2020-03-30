@@ -13,7 +13,7 @@
             contentType: 'application/json',
             data: JSON.stringify(dict),
             success: function( data, textStatus, jQxhr ){
-                $('#response pre').html(`${data[0].Title}`);
+                $('#response pre').html(`${data.title}`);
             },
             error: function( jqXhr, textStatus, errorThrown ){
                 console.log( errorThrown );
