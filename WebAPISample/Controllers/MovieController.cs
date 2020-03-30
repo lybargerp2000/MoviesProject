@@ -55,6 +55,7 @@ namespace WebAPISample.Controllers
             var foundMovie = _context.Movies.Where(a => a.MovieId == id).SingleOrDefault();
             foundMovie.Title = movie.Title;
             foundMovie.Director = movie.Director;
+            foundMovie.Genre = movie.Genre;
             _context.SaveChanges();
             return Ok();
         }
