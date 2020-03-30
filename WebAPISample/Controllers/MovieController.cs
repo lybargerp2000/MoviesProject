@@ -44,7 +44,7 @@ namespace WebAPISample.Controllers
             // Create movie in db logic
             _context.Movies.Add(value);
             _context.SaveChanges();
-            return Ok();
+            return Ok(value);
         }
 
         // PUT api/movie
