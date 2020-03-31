@@ -13,7 +13,8 @@
             contentType: 'application/json',
             data: JSON.stringify(dict),
             success: function( data, textStatus, jQxhr ){
-                $('#response pre').html(`${data.title}<br>${data.director}<br>${data.genre}`);
+                $('#response-to-add pre').html(`${data.title} has been added to the database!`);
+                $('#response-to-add').removeClass("invis");
             },
             error: function( jqXhr, textStatus, errorThrown ){
                 console.log( errorThrown );
@@ -56,3 +57,11 @@
 
     $('#search-box').submit( processSearch);
 })(jQuery);
+
+function displayAddForm() {
+    document.getElementById("searchBox").classList.remove("invis");
+}
+
+function closeAlert() {
+    document.getElementById("response-to-add").classList.add("invis");
+}

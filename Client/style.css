@@ -1,0 +1,14 @@
+.my-height {
+    height: 700px;
+}
+
+.invis {
+    display: none;
+}
+
+.bg-image {
+    padding-left:80px;
+    background-image: url("images/film.png");
+    background-position: center;
+    background-size: 50em;
+}
