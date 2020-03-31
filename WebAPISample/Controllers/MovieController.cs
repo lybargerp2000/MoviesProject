@@ -37,6 +37,14 @@ namespace WebAPISample.Controllers
             return Ok(movie);
         }
 
+        // GET api/movie/string
+        [HttpGet("{title}")]
+        public IActionResult Get(string input)
+        {
+            var movies = _context.Movies.Where(a => a.Title.Contains(input) || a.Director.Contains(input) || a.Genre.Contains(input));
+            return Ok(movies);
+        }
+
         // POST api/movie
         [HttpPost]
         public IActionResult Post([FromBody]Movie value)

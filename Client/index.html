@@ -15,14 +15,14 @@
     </div>
     <div class="row justify-content-center">
         <!--Insert search box here-->
-        <div class="form col-6">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search for a movie">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Search</button>
+        <form id="search-box">
+                <div class="input-group mb-3">
+                    <input type="text" name="search" class="form-control" placeholder="Search for a movie">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
                 </div>
-            </div>
-        </div>
+        </form>
     </div>
     <div class="row justify-content-center">
         <!--Container for results of search-->
@@ -42,9 +42,9 @@
         <form id="my-form">
             <div class="input-group mb-3">
 
-                    <input type="text" name="title" placeholder="Title" />
-                    <input type="text" name="director" placeholder="Director" />
-                    <input type="text" name="genre" placeholder="Genre"/>
+                    <input type="text" name="title" class="form-control" placeholder="Title" />
+                    <input type="text" name="director" class="form-control" placeholder="Director" />
+                    <input type="text" name="genre" class="form-control" placeholder="Genre"/>
                     <div class="input-group-append">
                         <button class="btn btn-success" type="submit">Submit</button>
                     </div>
