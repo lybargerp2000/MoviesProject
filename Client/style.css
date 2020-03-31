@@ -7,10 +7,12 @@
 }
 
 .bg-image {
+    background-image: linear-gradient(to right, grey, rgb(75, 74, 74));
     padding-left:80px;
-    background-image: url("images/film.png");
+    background-image: url("images/film.png");    
     background-position: center;
     background-size: 50em;
+    
 }
 
 #backToTopBtn {

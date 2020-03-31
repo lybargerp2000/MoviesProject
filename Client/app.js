@@ -64,6 +64,9 @@ function displayAddForm() {
 
 function closeAlert() {
     document.getElementById("response-to-add").classList.add("invis");
+    document.getElementById("inputTitle").value="";
+    document.getElementById("inputDirector").value="";
+    document.getElementById("inputGenre").value="";
 }
 
 var myBtn = document.getElementById("backToTopBtn");
