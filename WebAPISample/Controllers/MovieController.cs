@@ -28,17 +28,19 @@ namespace WebAPISample.Controllers
         }
 
         // GET api/movie/5
-        [HttpGet("{id}")]
+
+        [HttpGet("{id:int}")]
         public IActionResult Get(int id)
         {
             // Retrieve movie by id from db logic
-            var movie = _context.Movies.Where(a => a.MovieId == id).SingleOrDefault() ;
+            var movie = _context.Movies.Where(a => a.MovieId == id).SingleOrDefault();
             // return Ok(movie);
             return Ok(movie);
         }
 
         // GET api/movie/string
-        [HttpGet("{title}")]
+
+        [HttpGet("{input}")]
         public IActionResult Get(string input)
         {
             var movies = _context.Movies.Where(a => a.Title.Contains(input) || a.Director.Contains(input) || a.Genre.Contains(input));

@@ -36,7 +36,7 @@
         }
 
         $.ajax({
-            url: 'https://localhost:44325/api/movie',
+            url: `https://localhost:44325/api/movie/${this["search"].value}`,
             dataType: 'json',
             type: 'get',
             contentType: 'application/json',
