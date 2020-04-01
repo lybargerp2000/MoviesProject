@@ -38,3 +38,7 @@
     font-size: 1.5em;
     margin-bottom:10px;
 }
+
+.fontForJumbo {
+    text-shadow: -2px 0 #e9ecef, 0 2px #e9ecef, 2px 0 #e9ecef, 0 -2px #e9ecef;
+}
