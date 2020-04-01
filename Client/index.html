@@ -15,45 +15,45 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        <div class="row justify-content-center">
+            <button class="btn btn-primary" type="button" onclick="displayAddForm()">Add a movie</button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
         <!--Insert search box here-->
-        <form id="search-box">
+        <form id="search-box" class="col-6" >
                 <div class="input-group mb-3">
-                    <input type="text" name="search" class="form-control" placeholder="Search for a movie">
+                    <input type="text" name="search" class="form-control" placeholder="Search by title, director, or genre">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit">Search</button>
+                        <button class="btn btn-primary" type="submit" >Search</button>
                     </div>
                 </div>
         </form>
     </div>
     <div class="row justify-content-center">
         <!--Container for results of search-->
-        <div id="response">
+        <form id="response">
             <pre class="text-white"></pre>
-        </div>
+        </form>
     </div>
-    <div class="row justify-content-center">
-        <a href="#searchBox">
-            <button class="btn btn-primary" type="button" href="#searchBox" onclick="displayAddForm()">Add a movie</button>
-        </a>
-    </div>
-    <div class="row justify-content-center">
-    </div>
+
 </div>
 
-<div id="searchBox" class="container-fluid my-height invis">
+<div id="add-form" class="container-fluid my-height invis">
     <div class="row justify-content-center">
-        <div class="row justify-content-center">
-            <form id="my-form">
-                <div class="input-group mb-3">    
-                    <input id="inputTitle" type="text" name="title" class="form-control" placeholder="Title" />
-                    <input id="inputDirector" type="text" name="director" class="form-control" placeholder="Director" />
-                    <input id="inputGenre" type="text" name="genre" class="form-control" placeholder="Genre"/>
-                    <div class="input-group-append">
-                        <button class="btn btn-success" type="submit">Submit</button>
-                    </div>
-                </div>            
-            </form>
-        </div>
+        <span class="fontForForm text-white">Add a movie</span>
+    </div>
+    <div class="row justify-content-center">
+        <form id="my-form" class="col-6">
+            <div class="input-group mb-3">    
+                <input id="inputTitle" type="text" name="title" class="form-control" placeholder="Title" />
+                <input id="inputDirector" type="text" name="director" class="form-control" placeholder="Director" />
+                <input id="inputGenre" type="text" name="genre" class="form-control" placeholder="Genre"/>                    
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </div>            
+        </form>
     </div>
     <div class="row justify-content-center">
         <div id="response-to-add" class="alert alert-success alert-dismissable invis">
@@ -63,27 +63,37 @@
     </div>
 </div>
 
-<div id="editContainer" class="container-fluid my-height">
+<div id="editContainer" class="container-fluid my-height invis">
     <div class="row justify-content-center">
-        <form id="editForm">
+        <span class="fontForForm text-white">Edit a movie</span>
+    </div>
+    <div class="row justify-content-center">
+        <form id="editForm" class="col-8">
             <div class="input-group mb-3">
+                <input id="edit-Id" type="text" name="editId" class="form-control invis"/>
                 <div class="input-group-prepend">
                     <span class="input-group-text">Title</span>
                 </div>
-                <input id="editTitle" type="text" name="editTitle" class="form-control"/>
+                <input id="edit-Title" type="text" name="editTitle" class="form-control"/>
                 <div class="input-group-prepend">
                     <span class="input-group-text">Director</span>
                 </div>
-                <input id="editDirector" type="text" name="editDirector" class="form-control"/>
+                <input id="edit-Director" type="text" name="editDirector" class="form-control"/>
                 <div class="input-group-prepend">
                     <span class="input-group-text">Genre</span>
                 </div>
-                <input id="editGenre" type="text" name="editGenre" class="form-control"/>
+                <input id="edit-Genre" type="text" name="editGenre" class="form-control"/>
                 <div class="input-group-append">
                     <button class="btn btn-success" type="submit">Submit</button>
                 </div>
             </div>
         </form>
+    </div>
+    <div class="row justify-content-center">
+        <div id="response-to-edit" class="alert alert-success alert-dismissable invis">
+            <button type="button" class="close" onclick="closeAlertEdit()">&times;</button>
+            <pre></pre>
+        </div>
     </div>
 </div>
 

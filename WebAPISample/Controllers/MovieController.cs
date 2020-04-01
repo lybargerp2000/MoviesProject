@@ -67,7 +67,7 @@ namespace WebAPISample.Controllers
             foundMovie.Director = movie.Director;
             foundMovie.Genre = movie.Genre;
             _context.SaveChanges();
-            return Ok();
+            return Ok(foundMovie);
         }
 
         // DELETE api/movie/5
